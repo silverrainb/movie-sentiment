@@ -40,7 +40,7 @@ The sentiment labels are:
 
 ### Preprocessing
 
-#####cleantext1
+##### cleantext1
 
 Use nltk.SnowballStemmer to stem words. e.g.
 ```
@@ -48,7 +48,7 @@ stemmer.stem("disappointments")
 #disappointment
 ```
 
-#####cleantext2
+##### cleantext2
 
 Create function to manually change certain word. e.g.
 
@@ -125,7 +125,7 @@ Group Kfold iterator variant with non-overlapping groups -- i.e. The same group 
 * XGboost:
 
 XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
-It is short for “Extreme Gradient Boosting” and used for superviosed learning problems. It is fast and shows good results.
+It is short for “Extreme Gradient Boosting” and used for supervised learning problems. It is fast and shows good results.
 
 The score is calculated from kaggle at
 
