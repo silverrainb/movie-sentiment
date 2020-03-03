@@ -1,9 +1,7 @@
 # Sentiment Analysis on Movie Reviews
 
-For DAT607 project 4, Text analysis, I chose kaggle project called `Sentiment analysis on movie reviews` from Kaggle.
+This project is from kaggle: [Sentiment analysis on movie reviews](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews).
 
-https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews
- 
 The challenge is to classify the sentiment of sentences from the Rotten Tomatoes dataset.
 
 
