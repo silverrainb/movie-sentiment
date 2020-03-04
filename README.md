@@ -43,7 +43,7 @@ The sentiment labels are:
 Use nltk.SnowballStemmer to stem words. e.g.
 ```
 stemmer.stem("disappointments") 
-#disappointment
+#disappoint
 ```
 
 ##### cleantext2
@@ -72,6 +72,7 @@ TF-IDF:
 * TF: Term Frequency (per sentence)
 * IDF: Document Frequency (per document)
 e.g.
+
 ```
 from sklearn.feature_extraction.text import TfidfVectorizer
 corpus = ["This is very strange",
@@ -80,21 +81,18 @@ vectorizer = TfidfVectorizer(min_df=1)
 X = vectorizer.fit_transform(corpus)
 idf = vectorizer.idf_
 print dict(zip(vectorizer.get_feature_names(), idf))
-
-
-# TF/IDF, the value uniqueness 1 > 0 (a, the, etc...)
-#{u'is': 1.0,
-# u'nice': 1.4054651081081644,
-# u'strange': 1.4054651081081644,
-# u'this': 1.0,
-# u'very': 1.0}
 ```
 
+	TF/IDF, the value uniqueness 1 > 0 (a, the, etc...)
+		{u'is': 1.0,
+		 u'nice': 1.4054651081081644,
+		 u'strange': 1.4054651081081644,
+		 u'this': 1.0,
+		 u'very': 1.0}
+
 We use TfidfVectorizer and make char_vectorizer to analyze on character level, and word_vectorizer on word level. (It is possible to create on feature-level.)
-I set max_features 10,000 and 30,000 respectively. It will take the amount to create vocabulary upto max_features amount. The ngram and max_features should get adjusted simultaneously.
 
-
-http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+I set max_features 10,000 and 30,000 respectively. It will take the amount to create vocabulary upto max_features amount. The ngram and max_features should get adjusted simultaneously. [For more information](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
 
 ### Fit and Transform
 
